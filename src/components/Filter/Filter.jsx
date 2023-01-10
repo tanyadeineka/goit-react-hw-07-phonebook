@@ -5,7 +5,7 @@ import { filterContact } from 'redux/filterSlice';
 export const Filter = () => {
     const dispatch = useDispatch();
 
-    const filter = useSelector(state => state.filter);
+    const filter = useSelector(state => state.filter.filter);
 
     return (
       <div className={css.filterContainer}>
